@@ -1,0 +1,27 @@
+.one-step {
+  background-color: $bg-color;
+  .title {
+    font-size: 2rem;
+  }
+  .sub-title {
+    padding: 1rem 0;
+  }
+  .form-wrapper {
+    width: 60%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &-benefits {
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+  }
+  input {
+    margin-bottom: 1rem;
+  }
+  button {
+    width: 100%;
+  }
+}

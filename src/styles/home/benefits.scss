@@ -1,0 +1,13 @@
+.benefits {
+  background: $bg-color;
+  &-wrapper {
+    padding: 5rem 0;
+  }
+  .sub-title {
+    padding: 15px 0 0;
+    margin-bottom: 10px;
+  }
+  &-descr {
+    padding: 1rem 0;
+  }
+}

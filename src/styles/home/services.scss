@@ -1,0 +1,22 @@
+.services {
+  &-wrapper {
+    padding: 5rem 0 2rem;
+  }
+  &-descr {
+    width: 60%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &-item {
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #e8e8e8;
+    .sub-title {
+      font-size: 1rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  .navbar-link {
+    padding: 0 1.2rem;
+    &:first-child {
+      padding-left: 0;
+      @include media-breakpoint-down(sm) {
+        padding-left: 1.2rem;
+      }
+    }
+  }
+  .phone {
+    font-size: 25px;
+    font-family: GilroyBold;
+  }
+  .fa-phone {
+    font-size: 27px;
+    padding-top: 10px;
+  }
+}

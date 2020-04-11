@@ -1,0 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+
+@import "fonts";
+@import "breakpoints";
+@import "./basic";
+@import "./header";
+@import "./home/home-main";
+@import "./prices/prices";
+@import "./footer";

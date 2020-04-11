@@ -1,0 +1,19 @@
+.footer {
+  font-size: .8rem;
+  a {
+    font-size: .8rem;
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  i {
+    padding-right: 1rem;
+  }
+  &-wrapper {
+    padding: 2rem 0;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
