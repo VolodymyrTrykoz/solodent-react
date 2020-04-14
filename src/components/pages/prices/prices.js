@@ -1,4 +1,5 @@
 import React from 'react';
+import PricesTable from './prices-table';
 
 const Prices = () => {
     return(
@@ -10,7 +11,7 @@ const Prices = () => {
                     <div className="prices-overview">
                         <div className="row">
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Якщо болить зуб</p>
                                 <ul>
                                     <li>Діагностика від 234 ŧ</li>
@@ -20,7 +21,7 @@ const Prices = () => {
                                 </ul>
                             </div>
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Якщо зуб пошкоджений чи відсутній</p>
                                 <ul>
                                     <li>Імплантація зубів від 234 ŧ</li>
@@ -30,7 +31,7 @@ const Prices = () => {
                                 </ul>
                             </div>
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Щоб зуби не хворіли</p>
                                 <ul>
                                     <li>Профілактичний огляд</li>
@@ -38,7 +39,7 @@ const Prices = () => {
                                 </ul>
                             </div>
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Особливий догляд</p>
                                 <ul>
                                     <li>Дитяча стоматологія від 234 ŧ</li>
@@ -49,7 +50,7 @@ const Prices = () => {
                         <p className="sub-title">Краса зубів</p>
                         <div className="row">
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Зробити зуби рівними,<br/>вирівняти прикус</p>
                                 <ul>
                                     <li>Брекети від 234 ŧ</li>
@@ -57,7 +58,7 @@ const Prices = () => {
                                 </ul>
                             </div>
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Відновити форму зубів</p>
                                 <ul>
                                     <li>Вініри на зуби від 3456 ŧ</li>
@@ -65,7 +66,7 @@ const Prices = () => {
                                 </ul>
                             </div>
                             <div className="col-lg-3">
-                                <img src="https://image.prntscr.com/image/xNKWMtp-S5Kwxe3iYRQr3A.png" alt="prices"/>
+                                <img src="https://image.prntscr.com/image/MUICwQJ7SUezizgonC3Qvw.png" alt="prices"/>
                                 <p>Зробити зуби білими</p>
                                 <ul>
                                     <li>Відбілювання від 3843 ŧ</li>
@@ -75,6 +76,7 @@ const Prices = () => {
                     </div>
                 </div>
             </div>
+            <PricesTable />
         </div>
     )
 };

@@ -1,5 +1,4 @@
 .contacts {
-  border-bottom: 2px solid #ccc;
   &-wrapper {
     padding: 4rem 0;
   }
@@ -21,5 +20,21 @@
   button {
     background: none;
     border: none;
+  }
+  .card-header {
+    cursor: pointer;
+  }
+}
+
+.info-window {
+  .title {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 3px;
+  }
+  a {
+    font-size: 12px;
   }
 }

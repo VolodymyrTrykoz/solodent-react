@@ -1,11 +1,44 @@
 import React, { Component} from "react";
 import { withFormik, Form, Field  } from "formik";
+import MaskedInput from "react-text-mask";
+import {inject, observer} from 'mobx-react';
 import schema  from './schemaStorage';
 import Appointment from '../appointment';
 
+
+@inject('store')
+
+@observer
 class FormComponent extends Component {
+
+    componentDidUpdate(prevProps, prevState, snapshot){
+        if(prevProps.status !== this.props.status){
+            if(this.props.setIsOpen) {
+                this.props.setIsOpen();
+            }
+            this.props.store.setFormStatusToSuccess();
+        }
+    }
+
     render() {
-        const { errors, touched} = this.props;
+        const { errors, touched, values } = this.props;
+        const phoneNumberMask = [
+            "(",
+            /[0-9]/,
+            /\d/,
+            /\d/,
+            ")",
+            " ",
+            /\d/,
+            /\d/,
+            /\d/,
+            "-",
+            /\d/,
+            /\d/,
+            "-",
+            /\d/,
+            /\d/
+        ];
         return (
             <Form>
                 <div>
@@ -19,15 +52,25 @@ class FormComponent extends Component {
                 <div>
                     {touched.phone && errors.phone && <p>{errors.phone}</p>}
                     <Field
-                        className="form-control ds-input"
-                        type="text"
                         name="phone"
-                        placeholder="Номер телефону"/>
+                        value={values.phone}
+                        render={({ field }) => (
+                                <MaskedInput
+                                    {...field}
+                                    mask={phoneNumberMask}
+                                    className="form-control ds-input"
+                                    placeholder="Номер телефону"
+                                    type="text"
+                                />
+                            )
+                        }
+                    />
                 </div>
                 <Appointment
                     shouldOpenModal={false}
                 />
             </Form>
+
         )
     }
 };
@@ -40,8 +83,9 @@ const AppointmentForm = withFormik({
         }
     },
     validationSchema: schema.first,
-    handleSubmit(values){
-        console.log(values)
+    handleSubmit(values, {setStatus}){
+        console.log(values);
+        setStatus({ success: true });
     }
 })(FormComponent);
 

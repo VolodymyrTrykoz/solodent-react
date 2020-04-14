@@ -3,9 +3,7 @@ import HomeContacts from '../home/home-contacts';
 
 const Contacts = () => {
     return(
-        <div className="container">
-            <HomeContacts />
-        </div>
+        <HomeContacts />
     )
 };
 

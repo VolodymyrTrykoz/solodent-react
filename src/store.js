@@ -1,14 +1,14 @@
 import {observable, computed, action} from "mobx";
 
 class Store {
-    @observable isModalOpened = false;
+    @observable isFormSent = false;
 
-    @computed get modalState(){
-        return this.isModalOpened
+    @computed get getFormStatus(){
+        return this.isFormSent
     }
 
-    @action toggleModalState(){
-        this.isModalOpened = !this.isModalOpened;
+    @action setFormStatusToSuccess(){
+        this.isFormSent = true;
     }
 }
 
