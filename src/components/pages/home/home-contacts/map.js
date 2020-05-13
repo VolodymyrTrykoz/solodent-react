@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
-import mapStyles from './mapStyles';
+// import mapStyles from './mapStyles';
 
 const Map = ({location, isOpen, markerOnCLick}) => {
     return(
         <GoogleMap
             defaultZoom={17}
             center={location}
-            defaultOptions={{styles: mapStyles}}
+            // defaultOptions={{styles: mapStyles}}
         >
             <Marker
                 title={'Solodent'}

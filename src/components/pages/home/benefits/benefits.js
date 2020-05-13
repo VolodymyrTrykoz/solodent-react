@@ -6,7 +6,7 @@ const Benefits = () => {
         <div className="benefits">
             <div className="container">
                 <div className="benefits-wrapper">
-                    <h2 className="title">Переваги нашої клініки</h2>
+                    <h2 className="title"><span className="before">Переваги нашої клініки</span></h2>
                     <p className="benefits-descr">
                         Стоматологія «Solodent» має в професійне обладнання, сервіс європейського рівня, а зустрінуть вас досвідчені
                         фахівці. Вам залишається тільки зателефонувати та записатись на прийом до лікаря. В нашій клініці подбають

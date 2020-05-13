@@ -4,7 +4,7 @@ import AppointmentForm from './appointment-form';
 Modal.setAppElement('#root');
 
 
-const MyModal = () => {
+const MyModal = ({title}) => {
     const [modalIsOpen,setIsOpen] = React.useState(false);
     const toggleModal = () =>  {
         setIsOpen(!modalIsOpen);
@@ -17,8 +17,8 @@ const MyModal = () => {
             <button
                 onClick={toggleModal}
                 type="submit"
-                className="btn btn-secondary">
-                Записатись на прийом
+                className="btn">
+                {title}
             </button>
             <Modal
                 isOpen={modalIsOpen}

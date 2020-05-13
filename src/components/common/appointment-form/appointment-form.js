@@ -1,6 +1,6 @@
-import React, { Component} from "react";
-import { withFormik, Form, Field  } from "formik";
-import MaskedInput from "react-text-mask";
+import React, { Component} from 'react';
+import { withFormik, Form, Field  } from 'formik';
+import MaskedInput from 'react-text-mask';
 import {inject, observer} from 'mobx-react';
 import schema  from './schemaStorage';
 import Appointment from '../appointment';

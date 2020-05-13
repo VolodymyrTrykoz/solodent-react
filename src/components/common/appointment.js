@@ -1,14 +1,16 @@
 import React from 'react';
 import MyModal from './modal';
 
-const Appointment = ({shouldOpenModal}) => {
+const Appointment = ({shouldOpenModal, title = 'Записатись на прийом'}) => {
     if(shouldOpenModal){
-        return <MyModal/>
+        return <MyModal 
+            title={title}
+        />
     }
     return (
         <button
             type="submit"
-            className="btn btn-secondary">
+            className="btn">
             Записатись на прийом
         </button>
     )

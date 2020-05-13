@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'mobx-react';
 import store from './store';
-
-import './styles/main.scss';
 import App from './app';
+import './styles/main.scss';
 
 ReactDOM.render(
     <Provider

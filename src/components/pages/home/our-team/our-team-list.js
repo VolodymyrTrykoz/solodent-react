@@ -59,3 +59,17 @@ const OurTeamList = () => {
 };
 
 export default OurTeamList;
+
+
+        // slidesToShow: 3,
+        // autoplay: true,
+        // autoplaySpeed: 0,
+        // speed: 5000,
+        // cssEase:'linear',
+        // infinite: true,
+        // focusOnSelect: false,
+        // pauseOnFocus: false,
+        // pauseOnHover: false,
+        // touchMove: false,
+        // centerMode: true,
+        // variableWidth: true,

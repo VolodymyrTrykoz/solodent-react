@@ -8,4 +8,31 @@
   p {
     padding: 1rem 0;
   }
+  .text-sm {
+    padding: 10px 0 10px 30px;
+    border-left: 1px solid $brand-color;
+  }
+}
+
+.slick-dots li {
+  button {
+    &:before {
+      font-size: 12px;
+      border: 1px solid #15c39a;
+      color: #15c39a;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      line-height: 12px;
+      top: 1px;
+    }
+    &:hover:before, &:hover:before {
+      opacity: .5;
+      
+    }
+  }
+  &.slick-active button:before {
+    color: $brand-color;
+    opacity: 1;   
+  }
 }
