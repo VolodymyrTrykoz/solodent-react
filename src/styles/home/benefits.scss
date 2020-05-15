@@ -2,11 +2,16 @@
   &-wrapper {
     padding: 5rem 0;
   }
+  &-descr {
+    padding: 1rem 0;
+  }
+  &-img {
+    width: 70px;
+    height: 80px;
+    background-color: #f1f1f1;
+  }
   .sub-title {
     padding: 15px 0 0;
     margin-bottom: 10px;
-  }
-  &-descr {
-    padding: 1rem 0;
   }
 }

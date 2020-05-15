@@ -1,6 +1,14 @@
 .footer {
-  border-top: 2px solid #ccc;
+  border-top: 1px #f0f2f9 solid;
   font-size: .8rem;
+  &-wrapper {
+    padding: 2rem 0;
+  }
+  &-logo {
+    width: 150px;
+    height: 100px;
+    background-color: #f1f1f1;
+  }
   a {
     font-size: .8rem;
   }
@@ -11,10 +19,8 @@
   i {
     padding-right: 1rem;
   }
-  &-wrapper {
-    padding: 2rem 0;
-  }
   .copyright {
     font-size: 12px;
+    margin-bottom: .5rem;
   }
 }

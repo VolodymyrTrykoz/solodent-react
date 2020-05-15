@@ -4,8 +4,8 @@ const ServicesItem = ({title, img}) => {
     return (
         <div className="col-lg-3 col-md-4">
             <div className="services-item">
+                <div className="img-box"></div>    
                 <p className="sub-title">{title}</p>
-                <img src={img} alt={title}/>
             </div>
         </div>
     )

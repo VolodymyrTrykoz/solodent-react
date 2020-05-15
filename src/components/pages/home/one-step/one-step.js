@@ -27,7 +27,7 @@ class OneStep extends Component {
                                 <img src={img} alt="last-step"/>
                             </div>
                             <div className="col-lg-6 col-sm-12">
-                                <h2 className="title">Один крок до здорової посмішки</h2>
+                                <h2 className="title">Один крок <br/> до здорової посмішки</h2>
                                 <p className="sub-title">Не пропусти можливість красиво посміхатись</p>
                                 <ul className="one-step-benefits">
                                     <div className="row">

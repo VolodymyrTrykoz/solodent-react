@@ -11,12 +11,20 @@
   &-item {
     padding: 15px;
     margin: 15px 0;
-    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
     .sub-title {
       font-size: 1rem;
+      width: 60%;
+      min-height: 50px;
+      margin: 15px auto 0;
     }
-    img {
-      width: 100%;
+    .img-box {
+      width: 100px;
+      height: 110px;
+      margin: auto;
+      background-color: #f1f1f1;
     }
   }
 }
