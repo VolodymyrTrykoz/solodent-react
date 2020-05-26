@@ -1,16 +1,19 @@
 .footer {
   border-top: 1px #f0f2f9 solid;
-  font-size: .8rem;
+  font-size: 0.8rem;
   &-wrapper {
     padding: 2rem 0;
   }
   &-logo {
-    width: 150px;
-    height: 100px;
-    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    img {
+      width: 45px;
+      height: 47px;
+    }
   }
   a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   ul {
     padding-left: 0;
@@ -21,6 +24,6 @@
   }
   .copyright {
     font-size: 12px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
