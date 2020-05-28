@@ -10,6 +10,11 @@
   }
   .contacts-details {
     margin: 1.5rem 0;
+    p {
+      span {
+        color: #8189a9;
+      }
+    }
   }
   &-item {
     padding: 2rem 0;
@@ -23,6 +28,32 @@
   }
   .card-header {
     cursor: pointer;
+    background: transparent;
+    border-bottom: none;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+  .city {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8189a9;
+  }
+  .street {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .accordion {
+    img {
+      transform: translateY(10px);
+    }
+    .active {
+      img {
+        transform: translateY(10px) rotateZ(180deg);
+      }
+    }
   }
 }
 

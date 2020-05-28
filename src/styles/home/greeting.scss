@@ -1,13 +1,26 @@
 .greeting {
+  background-image: url('../../assets/doctors-illustration-bg.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 120% 0%;
+  height: 870px;
+  position: relative;
   &-content {
     width: 60%;
     padding: 10rem 0 5rem;
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #a5acc8;
+    }
     h1 {
-      font-size: 60px;
+      font-size: 72px;
       color: $brand-color;
+      position: relative;
+      z-index: 1;
       @include media-breakpoint-down(sm) {
         font-size: 20px;
       }
@@ -16,6 +29,8 @@
   &-descr {
     padding-top: 1.6rem;
     .strong {
+      font-family: Montserrat;
+      font-size: 14px;
       position: relative;
       margin-left: 85px;
       @include media-breakpoint-down(sm) {
@@ -32,8 +47,13 @@
         @include media-breakpoint-down(sm) {
           display: none;
         }
-
       }
     }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
   }
 }

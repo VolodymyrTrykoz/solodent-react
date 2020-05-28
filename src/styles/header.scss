@@ -1,5 +1,4 @@
 .header {
-  border-bottom: 1px $light-gray-color solid;
   &-top {
     padding: 15px 0;
     border-bottom: 1px $light-gray-color solid;
@@ -14,6 +13,11 @@
       width: 45px;
       height: 47px;
     }
+    p {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 28px;
+    }
   }
   .navbar {
     padding: 1.5rem 1rem;
@@ -27,6 +31,9 @@
     }
   }
   .custom-select {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
     border: none;
     background-image: url("data:image/svg+xml,%3Csvg className='bi bi-chevron-down' width='1.5em' height='1.5em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fillRule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z' clipRule='evenodd'/%3E%3C/svg%3E");
     background-position: 85%, 50%;
@@ -36,7 +43,9 @@
     }
   }
   .navbar-link {
-    font-family: GilroyBold;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
     margin: 0 1.2rem;
     &:first-child {
       margin-left: 0;
@@ -73,17 +82,22 @@
   }
   .client-location {
     .custom-select {
+      font-size: 12px;
+      font-weight: 500;
       border: none;
       border-bottom: 1px dotted #000;
       border-radius: 0;
       background-image: none;
-      width: 80px;
       padding: 0;
       margin: 0 10px;
       height: 25px;
     }
   }
   .location-street {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Montserrat;
     width: 140px;
+    margin-bottom: 2px;
   }
 }

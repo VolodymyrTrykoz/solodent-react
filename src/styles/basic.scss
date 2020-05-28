@@ -1,19 +1,26 @@
-$text-color: black;
+$text-color: #2b2d38;
 $bg-color: #fbfbfb;
 $brand-color: #15c39a;
 $light-gray-color: #f0f2f9;
 
-body, a {
+body,
+a {
   color: $text-color;
   font-family: GilroyLight;
-  font-size: 1rem;
+  font-size: 14px;
+  &:hover {
+    text-decoration: none;
+    color: $text-color;
+  }
 }
 .strong {
-  font-family: GilroyBold;
+  font-family: Montserrat;
+  font-weight: bold;
 }
 .title {
-  font-family: GilroyBold;
-  font-size: 2.5rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 45px;
   color: $brand-color;
   span {
     position: relative;
@@ -24,7 +31,7 @@ body, a {
       height: 12px;
       background-color: #f0f2f9;
       bottom: 10px;
-      left: -200%;
+      left: -201%;
       z-index: -1;
     }
     &.after:after {
@@ -40,8 +47,9 @@ body, a {
   }
 }
 .sub-title {
-  font-family: GilroyBold;
-  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
   &--sm {
     font-size: 1.1rem;
   }

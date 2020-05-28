@@ -80,10 +80,8 @@ const Footer = () => {
             </div>
             <div className="col-lg-3">
               <div className="footer-logo">
-                <div className="footer-logo">
-                  <img src={logo} alt="logo" />
-                  <p>SOLODENT</p>
-                </div>
+                <img src={logo} alt="logo" />
+                <p>SOLODENT</p>
               </div>
             </div>
           </div>

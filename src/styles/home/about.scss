@@ -1,9 +1,14 @@
 .about {
+  background: #eef7f1;
+  overflow: hidden;
   &-wrapper {
     padding: 5rem 0;
     img {
       width: 100%;
     }
+  }
+  .title {
+    color: $text-color;
   }
   p {
     padding: 1rem 0;
@@ -11,5 +16,7 @@
   .text-sm {
     padding: 10px 0 10px 30px;
     border-left: 1px solid $brand-color;
+    font-style: italic;
+    color: $text-color;
   }
 }
