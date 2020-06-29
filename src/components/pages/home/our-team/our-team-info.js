@@ -1,60 +1,116 @@
 const ourTeamInfo = [
-    {
-        id: 1,
-        name: "Trienke van Aartsen",
-        location: "Бровари",
-        qualification: ['Стоматолог ', 'Терапевт'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 2,
-        name: "Chinaza Akachi ",
-        location: "Київ, Бровари",
-        qualification: ['Стоматолог ', 'Хірург'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 3,
-        name: "Siri Jakobsson",
-        location: "Київ, Бровари",
-        qualification: ['Стоматолог ', 'Терапевт'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 4,
-        name: "Matilda Evans",
-        location: "Київ",
-        qualification: ['Стоматолог ', 'Хірург'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 5,
-        name: "Trienke van Aartsen",
-        location: "Київ, Бровари",
-        qualification: ['Стоматолог ', 'Терапевт'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 6,
-        name: "Trienke van Aartsen",
-        location: "Київ",
-        qualification: ['Стоматолог ', 'Хірург'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 7,
-        name: "Antony van Aartsen",
-        location: "Київ",
-        qualification: ['Стоматолог ', 'Хірург'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
-    {
-        id: 8,
-        name: "Debby van Gerco",
-        location: "Київ",
-        qualification: ['Стоматолог ', 'Терапевт'],
-        img: "https://image.prntscr.com/image/QBXM1BRPQW6pnOAHtuRpBQ.png"
-    },
+  {
+    id: 1,
+    name: 'Trienke van Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 2,
+    name: 'Chinaza Akachi Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Хірург'],
+  },
+  {
+    id: 3,
+    name: 'Siri Київ, Бровари',
+    location: 'Київ, Бровари',
+    locationId: ['kyiv', 'brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 4,
+    name: 'Matilda Evans Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Хірург'],
+  },
+  {
+    id: 5,
+    name: 'Trienke Київ, Бровари',
+    location: 'Київ, Бровари',
+    locationId: ['kyiv ', 'brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 6,
+    name: 'Trienke van Aartsen Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Хірург'],
+  },
+  {
+    id: 7,
+    name: 'Antony van Aartsen Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Хірург'],
+  },
+  {
+    id: 8,
+    name: 'Debby van Gerco Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 9,
+    name: 'Trienke Aartsen Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 10,
+    name: 'Trienken Aartsen Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 11,
+    name: 'Trke van Atsen Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 12,
+    name: 'Trke van Atsen Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 13,
+    name: 'Trke van Atsen Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 14,
+    name: 'Trke van Atsen Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 15,
+    name: 'Trke van Atsen Бровари',
+    location: 'Бровари',
+    locationId: ['brovary'],
+    qualification: ['Стоматолог ', 'Терапевт'],
+  },
+  {
+    id: 16,
+    name: 'Chinaza Akachi Київ',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Стоматолог ', 'Хірург'],
+  },
 ];
 
 export default ourTeamInfo;

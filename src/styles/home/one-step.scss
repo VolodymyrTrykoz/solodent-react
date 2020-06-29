@@ -1,5 +1,27 @@
 .one-step {
-  background-color: $bg-color;
+  background-image: url('/doctors/one-step.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  &-wrapper {
+    background: #F0F2F9;
+    @include media-breakpoint-down(sm) {
+      padding: 40px 0;
+    }
+  }
+  &__form {
+    padding: 60px 0;
+  }
+  .form-wrapper {
+    width: 80%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  .container {
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(45%,#F0F2F9));
+    background-image: linear-gradient(to left,rgba(255,255,255,0) 0,#F0F2F9 45%);
+  }
   &-benefits {
     margin: 0 0 2rem 2.5rem;
     list-style: url("data:image/svg+xml,%3Csvg class='bi bi-check' width='1.5em' height='1.5em' viewBox='0 -4 16 16' fill='%2315c39a' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
@@ -7,17 +29,19 @@
       padding-left: 0;
     }
   }
+  &-img {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
   .title {
     font-size: 43px;
+    @include media-breakpoint-down(sm) {
+      font-size: 28px;
+    }
   }
   .sub-title {
     padding: 1rem 0;
-  }
-  .form-wrapper {
-    width: 60%;
-    @include media-breakpoint-down(sm) {
-      width: 100%;
-    }
   }
   img {
     width: 100%;

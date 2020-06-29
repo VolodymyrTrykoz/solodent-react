@@ -1,75 +1,109 @@
-import React from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import OurTeamItem from './our-team-item'
+import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import { inject, observer } from 'mobx-react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import OurTeamItem from './our-team-item';
 import ourTeamInfo from './our-team-info';
+import longArrow from '../../../../assets/long-arrow.svg';
 
-const OurTeamList = () => {
+@inject('store')
+@observer
+class OurTeamList extends Component {
+  state = {
+    currentSlide: 1,
+  };
+  render() {
+    const { currentSlide } = this.state;
+    const { store } = this.props;
     const settings = {
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 2,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 425,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-
-                }
-            },
-        ]
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 425,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+      afterChange: (index) => {
+        this.setState({ currentSlide: index + 1 });
+      },
     };
-    return(
-        <div className="our-team">
-            <Slider {...settings}>
-                {
-                    ourTeamInfo.map(({id, img, name, location, qualification}) => {
-                    return (
-                        <OurTeamItem
-                            key={id}
-                            img={img}
-                            name={name}
-                            location={location}
-                            qualification={qualification}
-                        />
-                    )
-                }) }
-            </Slider>
+
+    const team = ourTeamInfo.filter((el) =>
+      el.locationId.includes(store.location)
+    );
+
+    return (
+      <div className="our-team">
+        <select
+          name="city"
+          className="form-control ds-input mobile-only"
+          onChange={(e) => store.setUserLocation(e.target.value)}
+          defaultValue="kyiv"
+        >
+          <option value="kyiv">Київ</option>
+          <option value="brovary">Бровари</option>
+        </select>
+
+        <Slider {...settings}>
+          {team.map(({ id, name, location, qualification }) => {
+            return (
+              <OurTeamItem
+                key={id}
+                img={`/doctors/doctor${id}.png`}
+                name={name}
+                location={location}
+                qualification={qualification}
+              />
+            );
+          })}
+        </Slider>
+        <Link to="/about/#our-team" className="our-team__all-doctors">
+          Всі лікарі
+          <img src={longArrow} alt="arrow-right" />
+        </Link>
+        <div className="counter">
+          <span>{currentSlide}</span> з {team.length}
         </div>
-    )
-};
+      </div>
+    );
+  }
+}
 
 export default OurTeamList;
 
-
-        // slidesToShow: 3,
-        // autoplay: true,
-        // autoplaySpeed: 0,
-        // speed: 5000,
-        // cssEase:'linear',
-        // infinite: true,
-        // focusOnSelect: false,
-        // pauseOnFocus: false,
-        // pauseOnHover: false,
-        // touchMove: false,
-        // centerMode: true,
-        // variableWidth: true,
+// slidesToShow: 3,
+// autoplay: true,
+// autoplaySpeed: 0,
+// speed: 5000,
+// cssEase:'linear',
+// infinite: true,
+// focusOnSelect: false,
+// pauseOnFocus: false,
+// pauseOnHover: false,
+// touchMove: false,
+// centerMode: true,
+// variableWidth: true,

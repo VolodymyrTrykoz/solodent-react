@@ -23,8 +23,8 @@ const AccordionBody = () => {
 @inject('store')
 @observer
 class HomeContacts extends Component {
-  kyiv = { lat: 50.4477185, lng: 30.6732418 };
-  brovary = { lat: 50.5093882, lng: 30.7928073 };
+  kyiv = { lat: 50.4477100, lng: 30.6731118 };
+  brovary = { lat: 50.5092882, lng: 30.7928073 };
 
   setMainLocation = (city) => {
     this.props.store.setUserLocation(city);
@@ -39,12 +39,7 @@ class HomeContacts extends Component {
           <div className="contacts-wrapper">
             <h2 className="title">Наші контакти</h2>
             <div className="row">
-              <div className="col-lg-8 col-sm-12">
-                <FullMap
-                  location={location === 'kyiv' ? this.kyiv : this.brovary}
-                />
-              </div>
-              <div className="col-lg-4 col-sm-12">
+              <div className="col-lg-4 col-12">
                 <Accordion activeKey={location === 'kyiv' ? '0' : '1'}>
                   <Card>
                     <Accordion.Toggle
@@ -97,6 +92,11 @@ class HomeContacts extends Component {
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
+              </div>
+              <div className="col-lg-8 col-12">
+                <FullMap
+                  location={location === 'kyiv' ? this.kyiv : this.brovary}
+                />
               </div>
             </div>
           </div>

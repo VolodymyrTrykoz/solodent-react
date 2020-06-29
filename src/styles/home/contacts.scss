@@ -10,6 +10,10 @@
   }
   .contacts-details {
     margin: 1.5rem 0;
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+      margin-top: 0;
+    }
     p {
       span {
         color: #8189a9;
@@ -30,28 +34,45 @@
     cursor: pointer;
     background: transparent;
     border-bottom: none;
+    @include media-breakpoint-down(sm) {
+      padding: 30px 0 30px;
+    }
     p {
       margin-bottom: 5px;
     }
   }
   .city {
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
     font-size: 14px;
     font-weight: bold;
     color: #8189a9;
   }
   .street {
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
     font-size: 25px;
     font-weight: bold;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
   }
   .accordion {
     img {
-      transform: translateY(10px);
+      transform: translateY(10px) rotateZ(180deg);
     }
     .active {
       img {
-        transform: translateY(10px) rotateZ(180deg);
+        transform: translateY(10px);
+      }
+    }
+    .card {
+      border: none;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      &-body {
+        @include media-breakpoint-down(sm) {
+          padding-top: 0;
+        }
       }
     }
   }

@@ -7,6 +7,9 @@
   &-logo {
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
     img {
       width: 45px;
       height: 47px;

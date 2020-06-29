@@ -2,7 +2,7 @@ import React from 'react';
 
 const BenefitsItem = ({ img, title, description }) => {
   return (
-    <div className="col-lg-4 col-sm-12 ">
+    <div className="col-lg-4 col-sm-12 col-6">
       <div className="benefits-item">
         <div className="benefits-img">
           <img src={img} alt={title} />

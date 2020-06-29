@@ -1,6 +1,9 @@
 .about {
   background: #eef7f1;
   overflow: hidden;
+  &__inner-wrapper {
+    background: #eef7f1;
+  }
   &-wrapper {
     padding: 5rem 0;
     img {

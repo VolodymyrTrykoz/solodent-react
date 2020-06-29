@@ -9,14 +9,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      flex-direction: row;
+    }
     img {
       width: 45px;
       height: 47px;
+      @include media-breakpoint-down(sm) {
+        width: 40px;
+        height: 41px;
+      }
     }
     p {
       font-family: Montserrat;
       font-weight: bold;
       font-size: 28px;
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        margin: 0 0 0 16px;
+      }
     }
   }
   .navbar {
@@ -99,5 +111,50 @@
     font-family: Montserrat;
     width: 140px;
     margin-bottom: 2px;
+  }
+  .desktop-navigation {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .mobile-menu-btn {
+    display: none;
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .mobile-menu {
+    display: none;
+    padding: 0 15px;
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 5;
+    }
+    a {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    a:first-of-type {
+      margin-top: 0;
+    }
+    .mobile-close {
+      height: 35px;
+      width: 50px;
+      position: absolute;
+      right: 10px;
+      top: 25px;
+    }
   }
 }

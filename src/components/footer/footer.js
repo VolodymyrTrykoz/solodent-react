@@ -12,20 +12,36 @@ const Footer = () => {
               <p>ПОСЛУГИ</p>
               <ul>
                 <li className="row">
-                  <span className="col-6 text-sm">Терапія</span>
-                  <span className="col-6 text-sm">Дитяча стоматологія</span>
+                  <Link to="/services" className="col-6 text-sm">
+                    Терапія
+                  </Link>
+                  <Link to="/services" className="col-6 text-sm">
+                    Дитяча стоматологія
+                  </Link>
                 </li>
                 <li className="row">
-                  <span className="col-6 text-sm">Терапевтичне лікування</span>
-                  <span className="col-6 text-sm">Протезування</span>
+                  <Link to="/services" className="col-6 text-sm">
+                    Терапевтичне лікування
+                  </Link>
+                  <Link to="/services" className="col-6 text-sm">
+                    Протезування
+                  </Link>
                 </li>
                 <li className="row">
-                  <span className="col-6 text-sm">Відбілювання</span>
-                  <span className="col-6 text-sm">Ортодонтичний прийом</span>
+                  <Link to="/services" className="col-6 text-sm">
+                    Відбілювання
+                  </Link>
+                  <Link to="/services" className="col-6 text-sm">
+                    Ортодонтичний прийом
+                  </Link>
                 </li>
                 <li className="row">
-                  <span className="col-6 text-sm">Хірургія</span>
-                  <span className="col-6 text-sm">Реставрація</span>
+                  <Link to="/services" className="col-6 text-sm">
+                    Хірургія
+                  </Link>
+                  <Link to="/services" className="col-6 text-sm">
+                    Реставрація
+                  </Link>
                 </li>
               </ul>
             </div>

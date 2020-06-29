@@ -38,12 +38,6 @@ class HeaderCallMeBack extends Component {
                         </select>
                     </div>
                 </div>
-                <div className="col-6">
-                    <Appointment
-                            shouldOpenModal={true}
-                            title='Замовити дзвінок'
-                        />
-                </div>
             </div>
         )
     }

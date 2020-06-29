@@ -1,26 +1,31 @@
 .greeting {
-  background-image: url('../../assets/doctors-illustration-bg.png');
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: 120% 0%;
   height: 870px;
   position: relative;
+  @include media-breakpoint-down(md) {
+    height: 980px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 600px;
+  }
   &-content {
     width: 60%;
     padding: 10rem 0 5rem;
     @include media-breakpoint-down(sm) {
+      padding: 0;
       width: 100%;
     }
-    p {
+    span {
       font-size: 16px;
       text-transform: uppercase;
       color: #a5acc8;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        margin: 30px 0;
+      }
     }
     h1 {
       font-size: 72px;
       color: $brand-color;
-      position: relative;
-      z-index: 1;
       @include media-breakpoint-down(sm) {
         font-size: 20px;
       }
@@ -29,23 +34,22 @@
   &-descr {
     padding-top: 1.6rem;
     .strong {
-      font-family: Montserrat;
       font-size: 14px;
       position: relative;
-      margin-left: 85px;
+      margin-left: 95px;
       @include media-breakpoint-down(sm) {
-        margin-left: 0;
+        margin-left: 105px;
       }
       &:before {
         content: '';
         width: 75px;
         height: 2px;
         position: absolute;
-        left: -75px;
+        left: -95px;
         top: 10px;
         background-color: $brand-color;
         @include media-breakpoint-down(sm) {
-          display: none;
+          left: -100px;
         }
       }
     }
@@ -54,6 +58,33 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+  }
+  .doctors {
+    top: 0;
+    right: 0;
+    width: 890px;
+    @include media-breakpoint-down(md) {
+      top: 500px;
+      width: 80%;
+    }
+    @include media-breakpoint-down(sm) {
+      top: 300px;
+      width: 98%;
+    }
+
+  }
+  .doctorsBg {
+    top: -142px;
+    right: -111px;
+    width: 1150px;
+    z-index: -1;
+    @include media-breakpoint-down(md) {
+      top: 300px;
+      width: 840px;
+    }
+    @include media-breakpoint-down(sm) {
+      top: 243px;
+      width: 450px;
+    }
   }
 }

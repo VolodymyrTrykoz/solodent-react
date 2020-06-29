@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import img from './one-step.png';
 import AppointmentForm from '../../../common/appointment-form';
 
 const SubmissionSuccessful = () => {
@@ -18,13 +17,10 @@ class OneStep extends Component {
   render() {
     const { store } = this.props;
     return (
-      <div className="one-step">
-        <div className="container">
-          <div className="one-step-wrapper">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-12">
-                <img src={img} alt="last-step" />
-              </div>
+      <div className="one-step-wrapper">
+        <div className="one-step">
+          <div className="container">
+            <div className="row align-items-center one-step__form">
               <div className="col-lg-6 col-sm-12">
                 <h2 className="title">
                   Один крок <br /> до здорової посмішки
@@ -55,7 +51,7 @@ class OneStep extends Component {
             </div>
           </div>
         </div>
-      </div>
+    </div>
     );
   }
 }
