@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import AppointmentForm from './appointment-form';
 import close from '../../assets/icon-close.png';
-Modal.setAppElement('#root');
+
 
 const MyModal = ({ title }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);

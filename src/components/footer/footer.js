@@ -59,11 +59,6 @@ const Footer = () => {
                       Ціни
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/actions" className="navbar-link text-sm">
-                      Акції
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>

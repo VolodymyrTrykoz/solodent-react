@@ -5,7 +5,6 @@ import useMousePosition from '../../../common/mouse-position'
 
 const Greeting = () => {
   const img = useRef(null);
-  console.log(img);
   const { x, y } = useMousePosition();
 
   return (

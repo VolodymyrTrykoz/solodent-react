@@ -36,6 +36,11 @@
   }
   .select-wrapper {
     position: relative;
+    &__item {
+      span {
+        padding-right: 15px;
+      }
+    }
     svg {
       position: absolute;
       right: 25px;

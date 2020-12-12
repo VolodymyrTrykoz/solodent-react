@@ -18,14 +18,15 @@ const About = () => {
         <div id="our-team" className="our-team">
           <h2 className="title">Співробітники — наша особлива гордість</h2>
           <div className="our-team__list">
-            {ourTeamInfo.map(({ id, name, location, qualification }) => (
+            {ourTeamInfo.map(({ id, name, location, qualification, description }) => (
               <div className="our-team__item" key={id}>
                 <OurTeamItem
                   key={id}
-                  img={`/doctors/doctor${id}.png`}
+                  img={`/doctors/doctor${id}.jpg`}
                   name={name}
                   location={location}
                   qualification={qualification}
+                  description={description}
                 />
               </div>
             ))}

@@ -25,10 +25,10 @@ const PricesTable = () => {
             <ul className="subtitles">
               {filteredList[0].subtitle.map(({ title, price }) => (
                 <div key={title} className="row">
-                  <div className="col-10">
+                  <div className="col-9">
                     <li>{title}</li>
                   </div>
-                  <div className="col-2">
+                  <div className="col-3">
                     <li>{price}</li>
                   </div>
                 </div>

@@ -3,6 +3,7 @@ import { withFormik, Form, Field } from 'formik';
 import MaskedInput from 'react-text-mask';
 import { inject, observer } from 'mobx-react';
 import schema from './schemaStorage';
+import emailjs from'emailjs-com';
 import Appointment from '../appointment';
 
 @inject('store')
@@ -38,6 +39,7 @@ class FormComponent extends Component {
     ];
 
     return (
+      <>
         <Form>
           <div className="form-field">
             {touched.location && errors.location && (
@@ -82,8 +84,21 @@ class FormComponent extends Component {
           </div>
           <Appointment shouldOpenModal={false} />
         </Form>
+      </>
     );
   }
+}
+
+const sendEmail = (values) => {
+
+  emailjs.sendForm(
+    'gmail',
+    'solodent_template', values, 'user_hH1eEPn98s2KHF7vfzOEy')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
 }
 
 const AppointmentForm = withFormik({
@@ -97,7 +112,9 @@ const AppointmentForm = withFormik({
   validationSchema: schema.first,
   handleSubmit(values, { setStatus }) {
     console.log(values);
+    sendEmail(values);
     setStatus({ success: true });
+    this.props.store.setFormStatusToSuccess();
   },
 })(FormComponent);
 

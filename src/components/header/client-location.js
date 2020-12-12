@@ -24,7 +24,7 @@ class ClientLocation extends Component {
 
     return (
       <div className="client-location d-flex justify-content-end align-items-center">
-        <span className="text-sm">Ваше місто</span>
+        <span className="text-sm">Наша адреса</span>
         <select
           style={{ width: location === 'kyiv' ? 40 : 70 }}
           className="custom-select pointer"

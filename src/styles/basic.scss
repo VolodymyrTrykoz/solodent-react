@@ -81,6 +81,7 @@ ul {
 .btn {
   background-color: $brand-color;
   color: #fff;
+  margin: 5px 0;
   transition: box-shadow .2s ease-in-out;
   &:hover {
     color: #fff;
@@ -114,6 +115,7 @@ ul {
   }
   .close-modal {
     position: absolute;
+    z-index: 5;
     right: 15px;
     top: 15px;
     outline: none;
@@ -155,6 +157,40 @@ ul {
     color: #ef2323;
     margin-bottom: 5px;
   }
+}
+
+.success-notification {
+  position: fixed;
+  width: 50%;
+  height: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  background: #f4f8ff;
+  z-index: 5;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #f0f2f9;
+  border-radius: 5px;
+  animation-name: example;
+  animation-duration: 1s;
+  box-shadow: 0 2px 6px rgba(196, 196, 217, 0.22);
+  @include media-breakpoint-down(sm) {
+    width: 90%;
+    text-align: left;
+    height: 150px;
+  }
+  .title {
+    font-size: 25px;
+    margin-top: 10px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+  }
+}
+@keyframes example {
+  from {transform: translateX(-50%) scale(0.3);}
+  to {transform: translateX(-50%) scale(1);}
 }
 
 .mobile-only {

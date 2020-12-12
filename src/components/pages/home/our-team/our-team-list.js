@@ -20,9 +20,9 @@ class OurTeamList extends Component {
     const settings = {
       arrows: false,
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
-      slidesToShow: 6,
+      slidesToShow: 4,
       slidesToScroll: 2,
       responsive: [
         {
@@ -60,23 +60,25 @@ class OurTeamList extends Component {
       <div className="our-team">
         <select
           name="city"
-          className="form-control ds-input mobile-only"
+          className="form-control ds-input"
           onChange={(e) => store.setUserLocation(e.target.value)}
           defaultValue="kyiv"
+          value={store.location}
         >
           <option value="kyiv">Київ</option>
           <option value="brovary">Бровари</option>
         </select>
 
         <Slider {...settings}>
-          {team.map(({ id, name, location, qualification }) => {
+          {team.map(({ id, name, location, qualification, description }) => {
             return (
               <OurTeamItem
                 key={id}
-                img={`/doctors/doctor${id}.png`}
+                img={`/doctors/doctor${id}.jpg`}
                 name={name}
                 location={location}
                 qualification={qualification}
+                description={description}
               />
             );
           })}

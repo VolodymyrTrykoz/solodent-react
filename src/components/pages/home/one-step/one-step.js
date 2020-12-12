@@ -5,7 +5,7 @@ import AppointmentForm from '../../../common/appointment-form';
 const SubmissionSuccessful = () => {
   return (
     <>
-      <p>Ваш запит на прийом до лікаря створено!</p>
+      <p className="title">Ваш запит на прийом до лікаря створено!</p>
       <p>Наші співробітники в найближчий час вам зателефонують.</p>
     </>
   );

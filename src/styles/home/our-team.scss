@@ -26,14 +26,22 @@
       padding-left: 10px;
     }
   }
+  .our-team {
+    max-width: 1400px;
+    margin: 0 auto;
+    select {
+      width: 300px;
+      margin: 0 auto 25px;
+    }
+  }
   .our-team__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 100px;
   }
   .our-team__item {
-    width: 260px;
+    width: 350px;
     margin: 15px 0;
     .btn {
       padding: 5px 10px;
@@ -59,6 +67,13 @@
       width: 100%;
       height: auto;
     }
+    .doctor-img {
+      height: 347px;
+      object-fit: cover;
+      &.position-top {
+        object-position: top;
+      }
+    }
   }
   .title {
     padding: 2rem 0;
@@ -76,6 +91,45 @@
       span {
         color: #000;
       }
+    }
+  }
+}
+
+.doctor-info {
+  padding: 30px;
+  width: 40%;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+  .modal-content {
+    top: 0;
+    transform: none;
+  }
+  &__locations {
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .qualification {
+    width: 200px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 7px;
+  }
+  .accordion__list {
+    text-align: left;
+    list-style: disc;
+    padding-left: 30px;
+  }
+  .doctor-img {
+    width: 360px;
+    margin: 0 auto;
+    @include media-breakpoint-down(sm) {
+      width: 260px;
     }
   }
 }

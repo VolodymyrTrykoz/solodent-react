@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Appointment from '../common/appointment';
 import {inject, observer} from 'mobx-react';
 
 @inject('store')
@@ -9,33 +8,30 @@ class HeaderCallMeBack extends Component {
 
     phones = {
         'kyiv': {
-            phone: '(098) 705 19 88', 
+            phone: '(098) 705 19 88',
+            location: 'м.Київ, вул.Макаренка 1а'
         },
         'brovary': {
-            phone: '(098) 777 17 32',  
+            phone: '(098) 777 17 32',
+            location: 'м.Бровари, вул.Гагаріна 22'
         },
     }
 
-    handleChange = e => {
-        this.props.store.setUserLocation(e.target.value);
-    }
     render(){
-        const {location} = this.props.store;
         return(
             <div className="row">
-                <div className="col-4">
+                <div className="col-8">
                     <div className="row select-wrapper">
-                        <select className="custom-select pointer" onChange={e => this.handleChange(e)}>
-                            { Object.entries(this.phones).map( el => (
-                                    <option 
-                                        key={el[0]} 
-                                        value={el[0]}
-                                        selected={location === el[0]}
-                                        >
-                                            {el[1].phone}
-                                    </option>
-                                )) }
-                        </select>
+                        {
+                            Object.entries(this.phones).map( el => (
+                                <div
+                                  className="select-wrapper__item"
+                                  key={el[0]}>
+                                     <span>{el[1].phone}</span>
+                                     <span>{el[1].location}</span>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
