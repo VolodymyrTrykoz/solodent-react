@@ -10,17 +10,19 @@ const OurTeamItem = ({img, name, location, qualification, description}) => {
         <div className="our-team-item">
           <img className={cx({
             'doctor-img': true,
-            'position-top': name === 'Соловей Вадим Володимирович'
+            'position-top': name === 'Соловей Вадим Володимирович' || name === 'Тарасенко Анна Павлівна'
           })} src={img} alt={name} />
             <div className="our-team-item-info">
                 <p>{name}</p>
-                {
+                <div className="qualification-wrapper">
+                  {
                     qualification.map(item => {
-                        return(
-                            <span key={item} className="qualification">{item}</span>
-                        )
+                      return(
+                        <span key={item} className="qualification">{item}</span>
+                      )
                     })
-                }
+                  }
+                </div>
                 {
                     isOpen && (
                         <OurTeamModal

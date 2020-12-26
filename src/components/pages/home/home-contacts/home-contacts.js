@@ -7,14 +7,23 @@ import Card from 'react-bootstrap/Card';
 
 import { inject, observer } from 'mobx-react';
 
-const AccordionBody = () => {
+const AccordionBody = ({ location }) => {
   return (
     <div className="row">
       <div className="col contacts-details">
         <WorkingHours />
       </div>
       <div className="col contacts-details">
-        <a href="tel:+38098-507-19-88">+38 (098) 507 19 88</a>
+        { location === 'kyiv' ?  (
+          <>
+            <div><a href="tel:+38098-507-19-88">+38 (098) 507 19 88</a></div>
+            <div><a href="tel:+38093-853-29-07">+38 (093) 853 29 07</a></div>
+          </>
+        ) : (
+          <>
+            <a href="tel:+38098-961-02-62">+38 (098) 961-02-62</a>
+          </>
+        )}
       </div>
     </div>
   );
@@ -61,7 +70,7 @@ class HomeContacts extends Component {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="0">
                       <Card.Body>
-                        <AccordionBody />
+                        <AccordionBody location={location} />
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>

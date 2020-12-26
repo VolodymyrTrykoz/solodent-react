@@ -58,6 +58,11 @@
         padding: 5px 10px;
         border-radius: 20px;
         margin-right: 7px;
+        margin-bottom: 10px;
+        &-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
       .location {
         margin-top: 20px;
@@ -68,7 +73,7 @@
       height: auto;
     }
     .doctor-img {
-      height: 347px;
+      height: 360px;
       object-fit: cover;
       &.position-top {
         object-position: top;
@@ -97,7 +102,7 @@
 
 .doctor-info {
   padding: 30px;
-  width: 40%;
+  width: 650px;
   @include media-breakpoint-down(sm) {
     width: 100%;
   }
@@ -111,6 +116,7 @@
   }
   .title {
     font-size: 25px;
+    margin-top: 15px;
   }
   .qualification {
     width: 200px;
@@ -124,13 +130,16 @@
     text-align: left;
     list-style: disc;
     padding-left: 30px;
+    &-item {
+      font-size: 12px;
+    }
   }
   .doctor-img {
-    width: 360px;
+    width: 210px;
     margin: 0 auto;
-    @include media-breakpoint-down(sm) {
-      width: 260px;
-    }
+  }
+  .accordion__text {
+    margin: 5px 0;
   }
 }
 

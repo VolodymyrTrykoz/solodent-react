@@ -8,11 +8,11 @@ class HeaderCallMeBack extends Component {
 
     phones = {
         'kyiv': {
-            phone: '(098) 705 19 88',
+            phone: '(093) 507 19 88, (093) 853 29 07',
             location: 'м.Київ, вул.Макаренка 1а'
         },
         'brovary': {
-            phone: '(098) 777 17 32',
+            phone: '(098) 961 02 62',
             location: 'м.Бровари, вул.Гагаріна 22'
         },
     }
@@ -20,7 +20,7 @@ class HeaderCallMeBack extends Component {
     render(){
         return(
             <div className="row">
-                <div className="col-8">
+                <div className="col-12">
                     <div className="row select-wrapper">
                         {
                             Object.entries(this.phones).map( el => (

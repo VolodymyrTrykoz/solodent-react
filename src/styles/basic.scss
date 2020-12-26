@@ -136,6 +136,7 @@ ul {
     font-weight: bold;
     text-align: left;
     margin: 20px 0;
+    font-size: 12px;
     &.warning {
       color: #ef2323;
       margin-bottom: 5px;
@@ -143,6 +144,7 @@ ul {
   }
   .form-control {
     background-color: #F0F2F9;
+    margin-bottom: 20px;
   }
   .modal-content {
     top: 50%;

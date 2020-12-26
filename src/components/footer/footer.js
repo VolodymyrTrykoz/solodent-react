@@ -71,8 +71,14 @@ const Footer = () => {
                 </li>
                 <li className="text-sm">
                   <i className="fa fa-phone" aria-hidden="true"></i>
-                  <a href="tel:+38098-507-19-88" className="phone text-sm">
-                    +38 (098) 507 19 88
+                  <a href="tel:+38093-507-19-88," className="phone text-sm">
+                    +38 (093) 507 19 88
+                  </a>
+                </li>
+                <li className="text-sm">
+                  <i className="fa fa-phone" aria-hidden="true"></i>
+                  <a href="tel:+38093-853-29-07," className="phone text-sm">
+                    +38 (093) 853 29 07
                   </a>
                 </li>
               </ul>
@@ -83,8 +89,8 @@ const Footer = () => {
                 </li>
                 <li className="text-sm">
                   <i className="fa fa-phone" aria-hidden="true"></i>
-                  <a href="tel:+38098-507-19-88" className="phone text-sm">
-                    +38 (098) 507 19 88
+                  <a href="tel:+38098-961-02-62" className="phone text-sm">
+                    +38 (098) 961-02-62
                   </a>
                 </li>
               </ul>
