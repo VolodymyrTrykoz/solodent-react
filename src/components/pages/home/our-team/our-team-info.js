@@ -150,6 +150,14 @@ const ourTeamInfo = [
     description: `
       <p class="accordion__text">Стоматолог-терапевт</p>
       <p class="accordion__text">Основні напрями роботи:</p>
+      <ul class="accordion__list">
+        <li class="accordion__list-item">лікування карієсу і його ускладнень</li>
+        <li class="accordion__list-item">ендодонтичне лікування</li>
+        <li class="accordion__list-item">художні реставрації зубів</li>
+        <li class="accordion__list-item">професійна гігієна та підбір індивідуальних засобів гігієни для домашнього застосування</li>
+        <li class="accordion__list-item">професійне відбілювання зубів системою MagicSmile, Beyound, Arde</li>
+        <li class="accordion__list-item">ремінералізуюча терапія зубів</li>
+      </ul>
       <p class="accordion__text">Закінчила НМУ ім О.О. Богомольця</p>
       <p class="accordion__text">Курси:</p>
         <ul class="accordion__list">
@@ -159,14 +167,7 @@ const ourTeamInfo = [
           <li class="accordion__list-item">«Відбілювання з наукової точки зору» Михайло Глінський</li>
           <li class="accordion__list-item">«Ремінералізуючу терапія в стоматологічній практиці» А.В. Акулович</li>
         </ul>
-      <ul class="accordion__list">
-          <li class="accordion__list-item">лікування карієсу і його ускладнень</li>
-          <li class="accordion__list-item">ендодонтичне лікування</li>
-          <li class="accordion__list-item">художні реставрації зубів</li>
-          <li class="accordion__list-item">професійна гігієна та підбір індивідуальних засобів гігієни для домашнього застосування</li>
-          <li class="accordion__list-item">професійне відбілювання зубів системою MagicSmile, Beyound, Arde</li>
-          <li class="accordion__list-item">ремінералізуюча терапія зубів</li>
-        </ul>`,
+      `,
   },
 ];
 export default ourTeamInfo;

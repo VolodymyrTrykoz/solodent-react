@@ -26,6 +26,8 @@
     h1 {
       font-size: 72px;
       color: $brand-color;
+      position: relative;
+      z-index: 5;
       @include media-breakpoint-down(sm) {
         font-size: 20px;
       }
@@ -63,6 +65,7 @@
     top: 0;
     right: 0;
     width: 890px;
+    z-index: 0;
     @include media-breakpoint-down(md) {
       top: 500px;
       width: 80%;
