@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './../../assets/logo.png';
+import logo from './../../assets/logo.svg';
 
 const Footer = () => {
   return (
@@ -98,7 +98,6 @@ const Footer = () => {
             <div className="col-lg-3">
               <div className="footer-logo">
                 <img src={logo} alt="logo" />
-                <p>SOLODENT</p>
               </div>
             </div>
           </div>

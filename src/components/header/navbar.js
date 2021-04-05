@@ -13,6 +13,9 @@ const Navbar = () => {
           <NavLink to="/services" className="navbar-link">
             ПОСЛУГИ
           </NavLink>
+          <NavLink to="/examples" className="navbar-link">
+            НАШІ РОБОТИ
+          </NavLink>
           <NavLink to="/prices" className="navbar-link">
             ЦІНИ
           </NavLink>

@@ -4,8 +4,6 @@
     border-bottom: 1px $light-gray-color solid;
   }
   &-logo {
-    width: 120px;
-    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,25 +12,12 @@
       flex-direction: row;
     }
     img {
-      width: 45px;
-      height: 47px;
-      @include media-breakpoint-down(sm) {
-        width: 40px;
-        height: 41px;
-      }
-    }
-    p {
-      font-family: Montserrat;
-      font-weight: bold;
-      font-size: 28px;
-      @include media-breakpoint-down(sm) {
-        font-size: 16px;
-        margin: 0 0 0 16px;
-      }
+      width: 200px;
+      margin-right: 110px;
     }
   }
   .navbar {
-    padding: 1.5rem 1rem;
+    padding: 17px 1rem;
   }
   .select-wrapper {
     position: relative;
@@ -64,6 +49,12 @@
     font-weight: bold;
     font-size: 14px;
     margin: 0 1.2rem;
+    transition: text-shadow 0.2s ease-in-out;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+      text-shadow: 3px 2px 0 rgba(77, 233, 255, 0.49);
+    }
     &:first-child {
       margin-left: 0;
       @include media-breakpoint-down(xl) {

@@ -6,11 +6,12 @@ import {
   Marker,
   InfoWindow,
 } from 'react-google-maps';
-import mapMarker from '../../../../assets/map_marker.png';
+import mapMarker from '../../../../assets/logo-ggl.svg';
 
 const Map = ({ location, isOpen, markerOnCLick }) => {
   const icon = {
     url: mapMarker,
+    scale: 0.5,
 
   };
   return (

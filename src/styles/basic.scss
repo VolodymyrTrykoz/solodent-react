@@ -1,6 +1,6 @@
 $text-color: #2b2d38;
 $bg-color: #fbfbfb;
-$brand-color: #15c39a;
+$brand-color: #32e2e2;
 $light-gray-color: #f0f2f9;
 
 #root {
@@ -28,7 +28,7 @@ p {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 45px;
-  color: $brand-color;
+  color: #04fefd;
   @include media-breakpoint-down(sm) {
     font-size: 28px;
   }
@@ -85,7 +85,7 @@ ul {
   transition: box-shadow .2s ease-in-out;
   &:hover {
     color: #fff;
-    box-shadow: 0 10px 10px rgba(65, 82, 65, 0.15);
+    box-shadow: 0 10px 10px rgba(77, 233, 255, 0.35);
   }
 }
 .pointer {

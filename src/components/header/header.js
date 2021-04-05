@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HeaderCallMeBack from './header-call-me-back';
 import ClientLocation from './client-location';
 import Navbar from './navbar';
-import logo from './../../assets/logo.png';
+import logo from './../../assets/logo.svg';
 import menu from './../../assets/menu.png';
 import close from './../../assets/close.svg';
 
@@ -17,7 +17,6 @@ const Header = () => {
             <Link to="/">
               <div className="header-logo">
                 <img src={logo} alt="logo" />
-                <p>SOLODENT</p>
               </div>
             </Link>
           </div>
@@ -49,7 +48,6 @@ const Header = () => {
                 <Link to="/" onClick={() => setIsOpen(false)}>
                   <div className="header-logo">
                     <img src={logo} alt="logo" />
-                    <p>SOLODENT</p>
                   </div>
                 </Link>
                 <Link to="/" onClick={() => setIsOpen(false)}>
@@ -57,6 +55,9 @@ const Header = () => {
                 </Link>
                 <Link to="/about" onClick={() => setIsOpen(false)}>
                   Про нас
+                </Link>
+                <Link to="/examples" onClick={() => setIsOpen(false)}>
+                  Наші роботи
                 </Link>
                 <Link to="/prices" onClick={() => setIsOpen(false)}>
                   Ціни

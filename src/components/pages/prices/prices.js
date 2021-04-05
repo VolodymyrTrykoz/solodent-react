@@ -25,9 +25,9 @@ const Prices = () => {
                 <p className="prices__problem">Якщо болить зуб</p>
                 <ul>
                   <li>Консультація безкоштовна</li>
-                  <li>Лікування зубів від 50 грн</li>
-                  <li>Лікування ясен від 200 грн</li>
-                  <li>Видалення зуба від 500 грн </li>
+                  <li>Лікування зубів</li>
+                  <li>Лікування ясен</li>
+                  <li>Видалення зуба </li>
                 </ul>
               </div>
               <div className="col-lg-3">
@@ -36,9 +36,9 @@ const Prices = () => {
                   Якщо зуб пошкоджений чи відсутній
                 </p>
                 <ul>
-                  <li>Імплантація зубів від 600$</li>
-                  <li>Протезування зубів від 200 грн</li>
-                  <li>Реставрація зубів від 300 грн</li>
+                  <li>Імплантація зубів</li>
+                  <li>Протезування зубів</li>
+                  <li>Реставрація зубів</li>
                 </ul>
               </div>
               <div className="col-lg-3">
@@ -53,7 +53,7 @@ const Prices = () => {
                 <img src={services4} alt="prices" />
                 <p className="prices__problem">Особливий догляд</p>
                 <ul>
-                  <li>Дитяча стоматологія від 100 грн</li>
+                  <li>Дитяча стоматологія</li>
                 </ul>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Prices = () => {
                 <img src={services7} alt="prices" />
                 <p className="prices__problem">Зробити зуби білими</p>
                 <ul>
-                  <li>Відбілювання від 250 грн</li>
+                  <li>Відбілювання</li>
                 </ul>
               </div>
             </div>

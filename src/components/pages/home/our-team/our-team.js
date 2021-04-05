@@ -7,7 +7,7 @@ const OurTeam = () => {
       <div className="our-team-wrapper">
         <div className="container">
           <h2 className="title">
-            Співробітники &mdash; наша особлива гордість
+            Наші фахівці
           </h2>
         </div>
         <OurTeamList />

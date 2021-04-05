@@ -6,7 +6,7 @@ import Home from './components/pages/home';
 import Services from './components/pages/services';
 import About from './components/pages/about';
 import Prices from './components/pages/prices';
-import Actions from './components/pages/actions';
+import Examples from './components/pages/examples';
 import Contacts from './components/pages/contacts';
 import Footer from './components/footer/footer';
 import SuccessNotification from './components/common/success-notification';
@@ -26,7 +26,7 @@ class App extends Component {
             <Route path="/about" exact component={About} />
             <Route path="/services" exact component={Services} />
             <Route path="/prices" exact component={Prices} />
-            <Route path="/actions" exact component={Actions} />
+            <Route path="/examples" exact component={Examples} />
             <Route path="/contacts" exact component={Contacts} />
           </Switch>
           <Footer />

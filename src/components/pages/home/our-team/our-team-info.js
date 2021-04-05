@@ -1,37 +1,6 @@
 const ourTeamInfo = [
   {
     id: 1,
-    name: 'Соловей Мирослава Анатоліївна',
-    location: 'Київ',
-    locationId: ['kyiv'],
-    qualification: ['Директор', 'Дитячий стоматолог'],
-    description: `
-      <p class="accordion__text">Директор клініки "Solodent", дитячий лікар-стоматолог, терапевт.</p>
-      <p class="accordion__text">Закінчила НМУ ім. О.О. Богомольця.</p>
-      <p class="accordion__text">Працювала в стоматологічній клініці "Дент-Універсал".</p>
-      <p class="accordion__text">Була дитячим лікарем-стоматологом на кафедрі дитячої терапевтичної стоматології та профілактики стоматологічних захворювань ім О.О. Богомольця.</p>
-      <p class="accordion__text">Курси:</p>
-        <ul class="accordion__list">
-          <li class="accordion__list-item">системи міофункціональної корекції  аномалій прикуса для пацієнтів будь-якого віку</li>
-          <li class="accordion__list-item">курс використання еластиків в ортодонтії "Ortotropics"</li>
-          <li class="accordion__list-item">корекція прикуса функціональними апаратами у період росту та розвитку щелепно-лицевої області</li>
-          <li class="accordion__list-item">клінічне використання та наукові принципи "The Vector Method"</li>
-        </ul>
-      <p class="accordion__text">Основні напрямки роботи:</p>
-        <ul class="accordion__list">
-          <li class="accordion__list-item">лікування карієсу та його ускладнень</li>
-          <li class="accordion__list-item">ендодонтичне лікування</li>
-          <li class="accordion__list-item"> естетична реставрація</li>
-          <li class="accordion__list-item"> відбілювання зубів</li>
-          <li class="accordion__list-item"> естетична реставрація</li>
-          <li class="accordion__list-item"> знаходить індивідуальний підхід до кожної дитини</li>
-          <li class="accordion__list-item"> застосовує сучасні методики профілактики стоматологічних захворювань</li>
-          <li class="accordion__list-item"> володіє системою комп'ютерної анестезії STA, що забезпечує безболісне та комфорте знеболення у дітей та дорослих</li>
-          <li class="accordion__list-item"> відновлення молочних зубів системою Kids Crown</li>
-        </ul>`,
-  },
-  {
-    id: 2,
     name: 'Соловей Вадим Володимирович',
     location: 'Київ, Бровари',
     locationId: ['kyiv', 'brovary'],
@@ -47,6 +16,30 @@ const ourTeamInfo = [
           <li class="accordion__list-item"> реабілітація пацієнтів з повною втратою зубів зйомними конструкціями .</li>
         </ul>
       <p class="accordion__text">Ваша яскрава усмішка- результат наших умінь та старань. </p>`,
+  },
+  {
+    id: 2,
+    name: 'Соловей Мирослава Анатоліївна',
+    location: 'Київ',
+    locationId: ['kyiv'],
+    qualification: ['Директор', 'Дитячий стоматолог'],
+    description: `
+      <p class="accordion__text">Директор клініки "Solodent", дитячий лікар-стоматолог, терапевт.</p>
+      <p class="accordion__text">Закінчила НМУ ім. О.О. Богомольця.</p>
+      <p class="accordion__text">Працювала в стоматологічній клініці "Дент-Універсал".</p>
+      <p class="accordion__text">Була дитячим лікарем-стоматологом на кафедрі дитячої терапевтичної стоматології та профілактики стоматологічних захворювань ім О.О. Богомольця.</p>
+      <p class="accordion__text">Основні напрямки роботи:</p>
+        <ul class="accordion__list">
+          <li class="accordion__list-item">лікування карієсу та його ускладнень</li>
+          <li class="accordion__list-item">ендодонтичне лікування</li>
+          <li class="accordion__list-item"> естетична реставрація</li>
+          <li class="accordion__list-item"> відбілювання зубів</li>
+          <li class="accordion__list-item"> естетична реставрація</li>
+          <li class="accordion__list-item"> знаходить індивідуальний підхід до кожної дитини</li>
+          <li class="accordion__list-item"> застосовує сучасні методики профілактики стоматологічних захворювань</li>
+          <li class="accordion__list-item"> володіє системою комп'ютерної анестезії STA, що забезпечує безболісне та комфорте знеболення у дітей та дорослих</li>
+          <li class="accordion__list-item"> відновлення молочних зубів системою Kids Crown</li>
+        </ul>`,
   },
   {
     id: 3,

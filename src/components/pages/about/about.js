@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className="container">
         <div id="our-team" className="our-team">
-          <h2 className="title">Співробітники — наша особлива гордість</h2>
+          <h2 className="title">Наші фахівці</h2>
           <div className="our-team__list">
             {ourTeamInfo.map(({ id, name, location, qualification, description }) => (
               <div className="our-team__item" key={id}>
