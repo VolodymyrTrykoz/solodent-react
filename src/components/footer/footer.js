@@ -71,8 +71,8 @@ const Footer = () => {
                 </li>
                 <li className="text-sm">
                   <i className="fa fa-phone" aria-hidden="true"></i>
-                  <a href="tel:+38093-507-19-88," className="phone text-sm">
-                    +38 (093) 507 19 88
+                  <a href="tel:+38098-507-19-88," className="phone text-sm">
+                    +38 (098) 507 19 88
                   </a>
                 </li>
                 <li className="text-sm">

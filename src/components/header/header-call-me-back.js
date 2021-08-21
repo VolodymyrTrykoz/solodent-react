@@ -8,7 +8,7 @@ class HeaderCallMeBack extends Component {
 
     phones = {
         'kyiv': {
-            phone: '(093) 507 19 88, (093) 853 29 07',
+            phone: '(098) 507 19 88, (093) 853 29 07',
             location: 'м.Київ, вул.Макаренка 1а'
         },
         'brovary': {
