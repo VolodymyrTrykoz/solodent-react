@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     const { store } = this.props;
     return (
-      <>
+      <div className='wrapper'>
         <Router>
           <Header />
           <Switch>
@@ -32,7 +32,7 @@ class App extends Component {
           <Footer />
         </Router>
         {store.getFormStatus && <SuccessNotification />}
-      </>
+      </div>
     );
   }
 }
