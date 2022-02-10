@@ -103,7 +103,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "file-loader": "^6.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react-svg-loader": "^3.0.3",
     "svg-url-loader": "^6.0.0"
   },
